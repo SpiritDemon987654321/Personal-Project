@@ -27,6 +27,7 @@
         <main>
             <article>
                 <h2 id="game-title"></h2>
+                <h2 id="sub-title"></h2>
                 <p class="post-meta">
                     Published on February 19, 2025 by Heavenly Demon
                 </p>
@@ -59,6 +60,7 @@
                     if (game) {
                         document.title = `${game.title} Review`;
                         document.getElementById('game-title').textContent = game.title;
+                        document.getElementById('sub-title').textContent = game.sub-title,
                         document.getElementById('game-review').textContent = game.review || 'About to be Published';
                         document.body.style.backgroundImage = `url('Images/${game.bg}')`;
                     }
@@ -72,3 +74,4 @@
 </body>
 
 </html>
+
